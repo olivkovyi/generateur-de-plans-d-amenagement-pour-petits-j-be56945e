@@ -1,0 +1,288 @@
+{
+  "run_id": "run-1777425040962",
+  "job_index": 3,
+  "params": {
+    "owner_user_id": "user-1774822953462",
+    "owner_username": "admin",
+    "owner_display_name": "Administrator",
+    "count": 5,
+    "archetype": "generator",
+    "market": "France",
+    "language": "fr",
+    "country": "FR",
+    "brief": "Un assistant pour les citadins souhaitant créer un espace vert fonctionnel et esthétique sur leur balcon ou d…",
+    "notes": "Propose des agencements optimisés pour des jardins de ville de petite taille, en tenant compte de l'ensoleillement, des types de plantes et des contraintes d'espace.\nLes utilisateurs fournissent les dimensions, l'orientation et leurs préférences (potager, détente, ornemental) pour recevoir des suggestions de design.",
+    "import_notes": "",
+    "growth_job_id": "",
+    "growth_slug": "",
+    "growth_kind": "",
+    "dashboard_mode": "builder",
+    "network_site_format": "forum",
+    "network_primary_topic": "",
+    "network_primary_geo": "",
+    "network_domain_pool": "forum-de-jeu.shop",
+    "network_hosting_pool": "4vps:netoper | server_id=447345 | ip=5.253.59.18 | ssh_user=root | ssh_port=22",
+    "network_dns_strategy": "auto_pool_assign",
+    "network_domain_flow": "manual",
+    "network_content_strategy": "",
+    "network_model_concept": "google/gemini-2.5-flash-lite:nitro",
+    "network_model_seo": "google/gemini-2.5-flash-lite:nitro",
+    "network_model_build": "google/gemini-2.5-flash",
+    "network_model_qa": "anthropic/claude-haiku-4.5",
+    "network_model_growth": "google/gemini-2.5-flash-lite:nitro",
+    "network_blueprint_id": "",
+    "mode": "production",
+    "run_kind": "generated_batch",
+    "publish_target": "render",
+    "requested_publish_target": "render",
+    "railway_project_id_override": "",
+    "railway_environment_id_override": "",
+    "railway_service_id_override": "",
+    "railway_service_name_override": "",
+    "github_repo_private": true,
+    "stage_models": {
+      "ideation": "google/gemini-2.5-flash-lite:nitro",
+      "spec": "google/gemini-2.5-flash",
+      "copy": "google/gemini-2.5-flash-lite:nitro",
+      "qa": "anthropic/claude-haiku-4.5",
+      "escalation": "anthropic/claude-sonnet-4.6"
+    },
+    "archetype_display": "mixed batch",
+    "archetype_mix": [
+      "tool",
+      "calculator",
+      "generator"
+    ],
+    "forced_design_theme": "sandline",
+    "forced_structure_preset": "editorial-rail",
+    "site_idea_title": "Générateur de Plans d'Aménagement pour Petits Jardins Urbains",
+    "site_idea_summary": "Propose des agencements optimisés pour des jardins de ville de petite taille, en tenant compte de l'ensoleillement, des types de plantes et des contraintes d'espace."
+  },
+  "site_spec": {
+    "slug": "generateur-de-plans-d-amenagement-pour-petits-j-be56945e",
+    "theme": {
+      "name": "Sandline",
+      "slug": "sandline",
+      "eyebrow": "Conversion Layer",
+      "family": "minimal-seriffed",
+      "moods": [
+        "clean",
+        "editorial",
+        "calm",
+        "luxury"
+      ],
+      "archetypes": [
+        "calculator",
+        "generator",
+        "tool"
+      ],
+      "niches": [
+        "legal",
+        "documents",
+        "premium services",
+        "planning",
+        "home"
+      ],
+      "keywords": [
+        "clarity",
+        "elegant",
+        "serif",
+        "professional"
+      ],
+      "token_index": [
+        "calculator",
+        "calm",
+        "clarity",
+        "clean",
+        "conversion",
+        "documents",
+        "editorial",
+        "elegant",
+        "generator",
+        "home",
+        "layer",
+        "legal",
+        "luxury",
+        "minimal",
+        "planning",
+        "premium",
+        "professional",
+        "sandline",
+        "serif",
+        "seriffed",
+        "services",
+        "tool"
+      ],
+      "font_embed": "https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap",
+      "display_font": "\"Cormorant Garamond\", serif",
+      "body_font": "\"Inter\", sans-serif",
+      "layout": "editorial",
+      "card_style": "outline",
+      "button_style": "outline",
+      "decor_style": "paper",
+      "hero_template": "1fr",
+      "seo_template": "1fr",
+      "feature_columns": 2,
+      "faq_columns": 2,
+      "hero_min_height": "auto",
+      "panel_radius": "30px",
+      "card_radius": "24px",
+      "chip_radius": "999px",
+      "button_radius": "18px",
+      "outline_width": "1px",
+      "backdrop_blur": "0px",
+      "palette": {
+        "bg": "#f5efe4",
+        "surface": "rgba(255, 255, 255, 0.84)",
+        "surface_border": "rgba(28, 23, 18, 0.1)",
+        "text": "#141312",
+        "muted": "#5c564e",
+        "accent": "#0ea5a4",
+        "accent_alt": "#f97316",
+        "hero_glow": "rgba(14, 165, 164, 0.14)",
+        "button_text": "#ffffff",
+        "panel_alt": "rgba(20, 19, 18, 0.03)",
+        "shadow": "0 26px 66px rgba(71, 58, 39, 0.12)",
+        "input_fill": "rgba(20, 19, 18, 0.04)"
+      }
+    },
+    "structure": {
+      "name": "Editorial Rail",
+      "slug": "editorial-rail",
+      "hero_variant": "editorial",
+      "proof_variant": "rail",
+      "section_order": [
+        "seo",
+        "features",
+        "proof",
+        "faq"
+      ],
+      "feature_columns": 2,
+      "faq_columns": 2,
+      "family": "editorial",
+      "moods": [
+        "calm",
+        "trust",
+        "luxury"
+      ],
+      "archetypes": [
+        "calculator",
+        "generator",
+        "tool"
+      ],
+      "niches": [
+        "property",
+        "documents",
+        "consulting",
+        "insurance"
+      ],
+      "keywords": [
+        "editorial",
+        "rail",
+        "storytelling",
+        "magazine"
+      ],
+      "token_index": [
+        "calculator",
+        "calm",
+        "consulting",
+        "documents",
+        "editorial",
+        "faq",
+        "features",
+        "generator",
+        "insurance",
+        "luxury",
+        "magazine",
+        "proof",
+        "property",
+        "rail",
+        "seo",
+        "storytelling",
+        "tool",
+        "trust"
+      ]
+    },
+    "render_direction": "editorial-ledger",
+    "render_direction_name": "Editorial Ledger",
+    "page_blueprint": "signal-matrix",
+    "page_blueprint_name": "Signal Matrix",
+    "title": "Générateur de Plans d'Aménagement pour Petits Jardins Urbains",
+    "tagline": "Votre Projet de Jardin Urbain",
+    "description": "Propose des agencements optimisés pour des jardins de ville de petite taille, en tenant compte de l",
+    "feature_prefix": "Bloc",
+    "action": "Générer le document",
+    "cta_primary": "Générer mon plan",
+    "cta_secondary": "Consulter la FAQ",
+    "inputs": [
+      {
+        "id": "name",
+        "label": "Nom ou entreprise",
+        "type": "text",
+        "placeholder": "Studio Horizon",
+        "weight": 1.0
+      },
+      {
+        "id": "goal",
+        "label": "Objectif du document",
+        "type": "text",
+        "placeholder": "confirmation de demande",
+        "weight": 1.0
+      },
+      {
+        "id": "details",
+        "label": "Détails utiles",
+        "type": "text",
+        "placeholder": "date, montant, référence",
+        "weight": 1.0
+      }
+    ],
+    "hero_metrics": [
+      {
+        "value": "Editorial Ledger",
+        "label": "Cadence"
+      },
+      {
+        "value": "3",
+        "label": "Entrées"
+      },
+      {
+        "value": "Brouillon généré",
+        "label": "Sortie"
+      }
+    ],
+    "trust_labels": [
+      "Editorial Ledger",
+      "Générer mon plan",
+      "Brouillon généré",
+      "Utilitaire immédiat",
+      "Structure SEO claire"
+    ],
+    "result_label": "Brouillon généré",
+    "result_unit": "",
+    "runtime_mode": "document_generator",
+    "page_variant": "editorial",
+    "faq_topic": "Générateur de Plans d'Aménagement pour Petits Jardins Urbains",
+    "faq_entries": [
+      {
+        "question": "Pourquoi utiliser cet outil pour Générateur de Plans d'Aménagement pour Petits Jardins Urbains ?",
+        "answer": "Il aide à cadrer le besoin rapidement et à orienter vers une prochaine action claire sur le marché France."
+      },
+      {
+        "question": "Le résultat est-il immédiat ?",
+        "answer": "Oui. L'interface est pensée pour une réponse rapide, lisible et exploitable dès la première interaction."
+      },
+      {
+        "question": "Cette page est-elle adaptée au SEO ?",
+        "answer": "Oui. La structure mélange utilité, clarté éditoriale et signaux de confiance sans surcharger l'expérience."
+      }
+    ],
+    "seo_paragraphs": [
+      "Cette page capte une intention forte autour de Générateur de Plans d'Aménagement pour Petits Jardins Urbains et la transforme en action utile pour un public situé sur France.",
+      "Le format hero-first accélère la compréhension, réduit les frictions et améliore la lisibilité sur mobile comme sur desktop.",
+      "Le socle reste volontairement simple pour faciliter les tests, la QA continue et les variations SEO."
+    ],
+    "document_html": "<!DOCTYPE html>\n<html lang=\"fr\">\n<head>\n    <meta charset=\"UTF-8\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n    <title>Générateur de Plans d&#x27;Aménagement pour Petits Jardins Urbains | Votre Projet de Jardin Urbain</title>\n    <meta name=\"description\" content=\"Propose des agencements optimisés pour des jardins de ville de petite taille, en tenant compte de l\">\n    <style>\n        body {\n            font-family: -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Helvetica, Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\";\n            margin: 0;\n            padding: 0;\n            background-color: #f7f7f7;\n            color: #333;\n            line-height: 1.6;\n        }\n\n        .container {\n            max-width: 1200px;\n            margin: 0 auto;\n            padding: 20px;\n            display: flex;\n            flex-wrap: wrap;\n            gap: 40px;\n        }\n\n        header {\n            background-color: #dbdbdb;\n            padding: 40px 20px;\n            text-align: center;\n            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);\n            margin-bottom: 20px;\n            width: 100%;\n        }\n\n        h1 {\n            font-size: 2.8em;\n            color: #3a3a3a;\n            margin-bottom: 15px;\n            letter-spacing: -0.03em;\n        }\n\n        header p {\n            font-size: 1.2em;\n            color: #555;\n            max-width: 800px;\n            margin: 0 auto;\n        }\n\n        .main-content {\n            flex: 2;\n            min-width: 300px;\n            background-color: #ffffff;\n            padding: 30px;\n            border-radius: 8px;\n            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);\n        }\n\n        .sidebar {\n            flex: 1;\n            min-width: 280px;\n            background-color: #f0f0f0;\n            padding: 30px;\n            border-radius: 8px;\n            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);\n            display: flex;\n            flex-direction: column;\n            gap: 20px;\n        }\n\n        h2 {\n            font-size: 2em;\n            color: #3a3a3a;\n            margin-top: 0;\n            margin-bottom: 20px;\n            letter-spacing: -0.02em;\n        }\n\n        h3 {\n            font-size: 1.5em;\n            color: #4a4a4a;\n            margin-top: 25px;\n            margin-bottom: 15px;\n        }\n\n        label {\n            display: block;\n            margin-bottom: 8px;\n            font-weight: bold;\n            color: #444;\n        }\n\n        input[type=\"number\"],\n        select,\n        textarea {\n            width: calc(100% - 20px);\n            padding: 12px;\n            margin-bottom: 20px;\n            border: 1px solid #ccc;\n            border-radius: 5px;\n            font-size: 1em;\n            box-sizing: border-box;\n        }\n\n        input[type=\"radio\"] {\n            margin-right: 8px;\n        }\n\n        .radio-group label {\n            display: inline-block;\n            margin-right: 20px;\n            font-weight: normal;\n        }\n\n        button {\n            background-color: #5a7d7d;\n            color: white;\n            padding: 15px 25px;\n            border: none;\n            border-radius: 5px;\n            font-size: 1.1em;\n            cursor: pointer;\n            transition: background-color 0.3s ease;\n            width: 100%;\n            box-sizing: border-box;\n            margin-top: 10px;\n        }\n\n        button:hover {\n            background-color: #4a6a6a;\n        }\n\n        #tool-result {\n            background-color: #e9e9e9;\n            border-left: 5px solid #5a7d7d;\n            padding: 25px;\n            margin-top: 30px;\n            border-radius: 5px;\n            min-height: 100px;\n            font-size: 1.1em;\n            color: #333;\n        }\n\n        #tool-result h3 {\n            color: #5a7d7d;\n            margin-top: 0;\n            font-size: 1.8em;\n            margin-bottom: 15px;\n        }\n\n        #tool-result ul {\n            list-style: none;\n            padding: 0;\n            margin: 0;\n        }\n\n        #tool-result ul li {\n            background-color: #f7f7f7;\n            margin-bottom: 10px;\n            padding: 15px;\n            border-radius: 5px;\n            border: 1px solid #ddd;\n        }\n\n        .next-steps {\n            margin-top: 30px;\n            text-align: center;\n        }\n\n        .next-steps button {\n            width: auto;\n            display: inline-block;\n            margin: 10px;\n            background-color: #6a8b8b;\n        }\n\n        .next-steps button:hover {\n            background-color: #5c7d7d;\n        }\n\n        .seo-section {\n            background-color: #e2e2e2;\n            padding: 40px 20px;\n            margin-top: 40px;\n            text-align: center;\n            border-top: 1px solid #d0d0d0;\n            width: 100%;\n        }\n\n        .seo-section h2 {\n            font-size: 2em;\n            color: #3a3a3a;\n            margin-bottom: 25px;\n        }\n\n        .seo-section p {\n            max-width: 800px;\n            margin: 0 auto 15px auto;\n            color: #555;\n        }\n\n        .seo-section ul {\n            list-style: none;\n            padding: 0;\n            max-width: 800px;\n            margin: 20px auto 0 auto;\n            display: flex;\n            flex-wrap: wrap;\n            justify-content: center;\n            gap: 10px;\n        }\n\n        .seo-section ul li {\n            background-color: #dbdbdb;\n            padding: 8px 15px;\n            border-radius: 20px;\n            font-size: 0.9em;\n            color: #4a4a4a;\n            border: 1px solid #ccc;\n        }\n\n        @media (max-width: 768px) {\n            .container {\n                flex-direction: column;\n                gap: 20px;\n            }\n\n            .main-content, .sidebar {\n                min-width: unset;\n                width: 100%;\n                padding: 20px;\n            }\n\n            h1 {\n                font-size: 2em;\n            }\n\n            h2 {\n                font-size: 1.6em;\n            }\n\n            header {\n                padding: 30px 15px;\n            }\n        }\n    </style>\n    <meta name=\"robots\" content=\"index, follow\">\n    <link rel=\"canonical\" href=\"https://generateur-de-plans-d-amenagement-pour-petits-j-be56945e.onrender.com\">\n    <meta property=\"og:title\" content=\"Générateur de Plans d&#x27;Aménagement pour Petits Jardins Urbains\">\n    <meta property=\"og:description\" content=\"Propose des agencements optimisés pour des jardins de ville de petite taille, en tenant compte de l\">\n    <meta property=\"og:url\" content=\"https://generateur-de-plans-d-amenagement-pour-petits-j-be56945e.onrender.com\">\n    <meta property=\"og:type\" content=\"website\">\n    <script type=\"application/ld+json\">{\"@context\": \"https://schema.org\", \"@type\": \"WebApplication\", \"name\": \"Générateur de Plans d'Aménagement pour Petits Jardins Urbains\", \"description\": \"Propose des agencements optimisés pour des jardins de ville de petite taille, en tenant compte de l\", \"url\": \"https://generateur-de-plans-d-amenagement-pour-petits-j-be56945e.onrender.com\", \"applicationCategory\": \"UtilityApplication\", \"operatingSystem\": \"Web Browser\"}</script>\n</head>\n<body data-site-slug=\"generateur-de-plans-d-amenagement-pour-petits-j-be56945e\" data-runtime-mode=\"document_generator\">\n    <header>\n        <h1>Imaginez Votre Coin de Verdure Urbain</h1>\n        <p>Transformez votre balcon ou terrasse en une oasis de bien-être. Notre assistant vous guide pas à pas pour créer un espace vert fonctionnel et esthétique, même en ville.</p>\n    </header>\n\n    <div class=\"container\">\n        <div class=\"main-content\">\n            <h2>Votre Projet de Jardin Urbain</h2>\n            <p>Remplissez les champs ci-dessous pour obtenir des suggestions d'aménagement personnalisées.</p>\n\n            <form id=\"tool-form\">\n                <label for=\"longueur\">Longueur de l'espace (en mètres) :</label>\n                <input type=\"number\" id=\"longueur\" name=\"longueur\" min=\"0.5\" max=\"20\" step=\"0.1\" required value=\"3\">\n\n                <label for=\"largeur\">Largeur de l'espace (en mètres) :</label>\n                <input type=\"number\" id=\"largeur\" name=\"largeur\" min=\"0.5\" max=\"10\" step=\"0.1\" required value=\"1.5\">\n\n                <label for=\"ensoleillement\">Ensoleillement :</label>\n                <select id=\"ensoleillement\" name=\"ensoleillement\" required>\n                    <option value=\"plein-soleil\">Plein soleil (6h+ par jour)</option>\n                    <option value=\"mi-ombre\">Mi-ombre (3-6h par jour)</option>\n                    <option value=\"ombre\">Ombre (moins de 3h par jour)</option>\n                </select>\n\n                <h3>Quel est l'objectif principal de votre espace ?</h3>\n                <div class=\"radio-group\">\n                    <input type=\"radio\" id=\"potager\" name=\"objectif\" value=\"potager\" checked>\n                    <label for=\"potager\">Potager/Herbes aromatiques</label>\n                    <input type=\"radio\" id=\"detente\" name=\"objectif\" value=\"detente\">\n                    <label for=\"detente\">Détente/Coin lecture</label>\n                    <input type=\"radio\" id=\"ornemental\" name=\"objectif\" value=\"ornemental\">\n                    <label for=\"ornemental\">Ornemental/Esthétique</label>\n                    <input type=\"radio\" id=\"mixte\" name=\"objectif\" value=\"mixte\">\n                    <label for=\"mixte\">Mixte (potager et détente)</label>\n                </div>\n                <br>\n\n                <label for=\"preferences-autres\">Avez-vous des préférences particulières (type de plantes, matériaux, style) ?</label>\n                <textarea id=\"preferences-autres\" name=\"preferences-autres\" rows=\"4\" placeholder=\"Ex: Bambou, bois recyclé, ambiance méditerranéenne...\"></textarea>\n\n                <button type=\"submit\" id=\"tool-submit\">Générer mon plan</button>\n            </form>\n\n            <div id=\"tool-result\">\n                <h3 id=\"result-headline\">Votre Aménagement Personnalisé</h3>\n                <p>Vos suggestions apparaîtront ici après la soumission du formulaire.</p>\n            </div>\n\n            <div class=\"next-steps\">\n                <button data-affiliate-slot=\"guide-plantes\">Télécharger le guide des plantes urbaines</button>\n                <button data-affiliate-slot=\"kit-demarrage\">Découvrir les kits de démarrage balcon</button>\n            </div>\n        </div>\n\n        <div class=\"sidebar\">\n            <h3>Pourquoi un Jardin Urbain ?</h3>\n            <p>Améliorez votre qualité de vie, réduisez le stress et contribuez à la biodiversité locale. Un petit espace vert peut transformer votre quotidien et celui de votre quartier.</p>\n\n            <h3>Témoignages</h3>\n            <p>\"Grâce à cet outil, mon balcon est passé de vide à un coin de verdure apaisant. Les conseils étaient parfaits pour mon petit espace !\"<br>— Sophie, Paris 11ème</p>\n            <p>\"Je n'aurais jamais pensé pouvoir cultiver mes propres herbes. Le générateur m'a donné les idées précises qu'il me fallait.\"<br>— Marc, Lyon 7ème</p>\n\n            <h3>Conseils d'Experts</h3>\n            <p>Pensez vertical ! Les murs et les supports suspendus sont vos meilleurs alliés pour maximiser l'espace. Intégrez des plantes à fleurs pour attirer les pollinisateurs et ajouter de la couleur.</p>\n        </div>\n    </div>\n\n    <div class=\"seo-section\">\n        <h2>Créer un Balcon Fleuri et Fonctionnel à Paris, Lyon ou Marseille</h2>\n        <p>Que vous habitiez un appartement parisien avec un petit balcon ou un toit-terrasse à Marseille, l'aménagement d'un jardin urbain est à portée de main. Découvrez comment transformer votre espace extérieur en un véritable havre de paix. Trouvez des idées pour un potager de balcon, des plantes adaptées à l'ombre ou au plein soleil, et des solutions pour optimiser chaque mètre carré. Notre générateur vous offre des plans personnalisés pour faire de votre rêve de verdure une réalité en ville.</p>\n        <ul>\n            <li>Aménagement balcon parisien</li>\n            <li>Jardin urbain petit espace</li>\n            <li>Potager sur terrasse en ville</li>\n            <li>Plantes pour balcon ensoleillé</li>\n            <li>Idées jardin de ville</li>\n            <li>Design balcon moderne</li>\n            <li>Optimisation petit jardin</li>\n            <li>Conseils jardinage urbain</li>\n            <li>Balcon fleuri facile</li>\n            <li>Végétalisation espace urbain</li>\n        </ul>\n    </div>\n\n    <script>\n        document.getElementById('tool-form').addEventListener('submit', function(event) {\n            event.preventDefault();\n\n            const longueur = parseFloat(document.getElementById('longueur').value);\n            const largeur = parseFloat(document.getElementById('largeur').value);\n            const ensoleillement = document.getElementById('ensoleillement').value;\n            const objectif = document.querySelector('input[name=\"objectif\"]:checked').value;\n            const preferences = document.getElementById('preferences-autres').value.toLowerCase();\n\n            let suggestions = [];\n            const surface = longueur * largeur;\n\n            suggestions.push(\"<h3>Proposition d'Aménagement pour votre Espace de \" + surface.toFixed(1) + \" m²</h3>\");\n\n            // Base recommendations based on objective\n            if (objectif === 'potager') {\n                suggestions.push(\"<li><strong>Objectif Potager :</strong> Privilégiez des jardinières profondes et des carrés potagers surélevés. Utilisez des herbes aromatiques en pot et des légumes-feuilles comme la salade, les radis ou les épinards.</li>\");\n            } else if (objectif === 'detente') {\n                suggestions.push(\"<li><strong>Objectif Détente :</strong> Installez un petit fauteuil confortable ou un banc compact. Ajoutez des plantes grimpantes sur un treillis pour l'intimité et une petite table basse.</li>\");\n            } else if (objectif === 'ornemental') {\n                suggestions.push(\"<li><strong>Objectif Ornemental :</strong> Variez les hauteurs avec des pots de différentes tailles. Optez pour des plantes à fleurs colorées et des feuillages décoratifs. Pensez aux suspensions.</li>\");\n            } else if (objectif === 'mixte') {\n                suggestions.push(\"<li><strong>Objectif Mixte :</strong> Dédiez un coin aux herbes aromatiques et aux petits légumes, et un autre à un siège confortable entouré de plantes fleuries faciles d'entretien.</li>\");\n            }\n\n            // Recommendations based on sun exposure\n            if (ensoleillement === 'plein-soleil') {\n                suggestions.push(\"<li><strong>Ensoleillement (Plein Soleil) :</strong> Choisissez des plantes méditerranéennes (lavande, romarin, olivier nain), des géraniums, des cactus ou des tomates et poivrons pour le potager.</li>\");\n            } else if (ensoleillement === 'mi-ombre') {\n                suggestions.push(\"<li><strong>Ensoleillement (Mi-ombre) :</strong> Les hortensias, fuchsias, impatiens, ou des salades et radis seront adaptés. Pensez aussi aux fougères pour un coin plus frais.</li>\");\n            } else if (ensoleillement === 'ombre') {\n                suggestions.push(\"<li><strong>Ensoleillement (Ombre) :</strong> Privilégiez les fougères, hostas, impatiens, lierres ou la menthe. Les mousses peuvent aussi créer une ambiance zen.</li>\");\n            }\n\n            // Space optimization for small areas\n            if (surface < 4) {\n                suggestions.push(\"<li><strong>Optimisation Espace :</strong> Pour votre petit espace, pensez vertical ! Étagères à plantes, jardinières suspendues, et murs végétaux sont indispensables. Choisissez des meubles pliables.</li>\");\n            } else if (surface >= 4 && surface < 8) {\n                suggestions.push(\"<li><strong>Optimisation Espace :</strong> Avec cette surface, vous pouvez combiner quelques éléments : un petit salon de jardin, des jardinières au sol et quelques suspensions.</li>\");\n            } else { // Larger spaces\n                suggestions.push(\"<li><strong>Optimisation Espace :</strong> Votre espace généreux permet d'intégrer plusieurs zones : un coin repas, un espace détente et un espace de culture. Variez les textures et les matériaux.</li>\");\n            }\n\n            // Additional preferences\n            if (preferences.includes('bambou')) {\n                suggestions.push(\"<li><strong>Préférence Spécifique :</strong> Pour le bambou, optez pour des variétés non traçantes et de grands pots pour éviter l'envahissement. Il apportera une touche zen et une intimité.</li>\");\n            }\n            if (preferences.includes('bois')) {\n                suggestions.push(\"<li><strong>Préférence Spécifique :</strong> Le bois recyclé est un excellent choix. Utilisez-le pour des jardinières, des caillebotis au sol ou un petit banc pour une ambiance naturelle et durable.</li>\");\n            }\n            if (preferences.includes('méditerranéen')) {\n                suggestions.push(\"<li><strong>Préférence Spécifique :</strong> Pour une ambiance méditerranéenne, intégrez de la lavande, du romarin, un petit olivier, des poteries en terre cuite et des couleurs chaudes.</li>\");\n            }\n            if (preferences.includes('faible entretien') || preferences.includes('facile')) {\n                suggestions.push(\"<li><strong>Conseil Entretien :</strong> Pour un entretien facile, choisissez des plantes succulentes, des graminées ornementales ou des arbustes nains résistants. Pensez à un système d'arrosage goutte à goutte.</li>\");\n            }\n\n            suggestions.push(\"<li><strong>Conseil Général :</strong> N'oubliez pas les éléments décoratifs : éclairage d'ambiance, coussins confortables, quelques galets ou un petit miroir pour agrandir l'espace.</li>\");\n\n\n            document.getElementById('tool-result').innerHTML = '<h3>Votre Aménagement Personnalisé</h3><ul>' + suggestions.join('') + '</ul>';\n        });\n    </script>\n<div id=\"qa-smoke-result\" hidden></div>\n<script id=\"farmbuilder-affiliate-helper\">\n(function () {\n  window.__UTILITY_AFFILIATE_MAP = window.__UTILITY_AFFILIATE_MAP || {};\n  document.addEventListener(\"click\", function (event) {\n    const target = event.target.closest(\"[data-affiliate-slot]\");\n    if (!target) return;\n    const slot = target.getAttribute(\"data-affiliate-slot\");\n    const href = window.__UTILITY_AFFILIATE_MAP[slot];\n    if (!href) return;\n    if (target.tagName && target.tagName.toLowerCase() === \"a\") {\n      target.setAttribute(\"href\", href);\n      target.setAttribute(\"rel\", \"nofollow sponsored noopener noreferrer\");\n      return;\n    }\n    event.preventDefault();\n    window.open(href, \"_blank\", \"noopener\");\n  }, true);\n})();\n</script>\n<script id=\"farmbuilder-functional-qa\">\n(function () {\n  function marker() {\n    let node = document.getElementById(\"qa-smoke-result\");\n    if (node) return node;\n    node = document.createElement(\"div\");\n    node.id = \"qa-smoke-result\";\n    node.hidden = true;\n    document.body.appendChild(node);\n    return node;\n  }\n\n  let qaFinished = false;\n  let qaWatchdog = null;\n\n  function normalize(text) {\n    return String(text || \"\").replace(/\\s+/g, \" \").trim();\n  }\n\n  function findForm() {\n    return document.getElementById(\"tool-form\") || document.querySelector(\"form\");\n  }\n\n  function findResult() {\n    return (\n      document.getElementById(\"tool-result\") ||\n      document.querySelector(\"[data-result]\") ||\n      document.querySelector(\".tool-result, .result-card, .result, .results, .output, .preview, .diagnostic, .analysis\")\n    );\n  }\n\n  function primaryAction(form) {\n    if (!form) return null;\n    return (\n      document.getElementById(\"tool-submit\") ||\n      form.querySelector(\"#tool-submit\") ||\n      form.querySelector(\"[data-primary-action]\") ||\n      form.querySelector(\"button[type=submit]\") ||\n      form.querySelector(\"button\") ||\n      form.querySelector(\"input[type=submit]\")\n    );\n  }\n\n  function resultSignature(node) {\n    if (!node) return \"\";\n    const text = normalize(node.textContent);\n    const html = normalize(node.innerHTML).slice(0, 600);\n    return `${text}||${html}`;\n  }\n\n  function resultHeadline(node) {\n    if (!node) return \"\";\n    const heading = node.querySelector(\"h1, h2, h3, strong, b\");\n    return normalize(heading ? heading.textContent : \"\");\n  }\n\n  function sampleText(field) {\n    const key = `${field.id || \"\"} ${field.name || \"\"} ${field.placeholder || \"\"}`.toLowerCase();\n    if (/email/.test(key)) return \"bonjour@example.com\";\n    if (/url|site|website|lien/.test(key)) return \"https://example.com/offre-solaire\";\n    if (/phone|tel|mobile/.test(key)) return \"0612345678\";\n    if (/ville|city|localisation|location|region|departement|postal/.test(key)) return \"Paris\";\n    if (/orientation/.test(key)) return \"sud\";\n    if (/keyword|theme|topic|sujet|subject/.test(key)) return \"energie solaire domestique\";\n    if (/titre|title/.test(key)) return \"Simulateur solaire maison\";\n    if (/nom|name|project/.test(key)) return \"Projet Horizon\";\n    if (/description|notes|content|message/.test(key)) return \"Maison individuelle exposee sud avec toiture exploitable.\";\n    return field.placeholder || \"France\";\n  }\n\n  function sampleNumber(field) {\n    const key = `${field.id || \"\"} ${field.name || \"\"}`.toLowerCase();\n    if (/inclinaison|angle|slope/.test(key)) return \"30\";\n    if (/surface|size|m2|sqm/.test(key)) return \"28\";\n    if (/annee|year/.test(key)) return \"2024\";\n    if (/prix|price|budget|cost|amount|montant/.test(key)) return \"12000\";\n    const min = Number(field.min || \"\");\n    const max = Number(field.max || \"\");\n    if (Number.isFinite(min) && Number.isFinite(max) && max >= min) {\n      return String(Math.min(max, Math.max(min, min + Math.round((max - min) * 0.35))));\n    }\n    if (Number.isFinite(min)) return String(Math.max(min, 12));\n    if (Number.isFinite(max)) return String(Math.min(max, 12));\n    return field.value || \"12\";\n  }\n\n  function applySample(field) {\n    const tag = (field.tagName || \"\").toLowerCase();\n    const type = (field.type || \"\").toLowerCase();\n    if (field.disabled) return;\n    if (type === \"hidden\" || type === \"submit\" || type === \"button\" || type === \"reset\" || type === \"image\" || type === \"file\") {\n      return;\n    }\n    const currentValue = normalize(field.value);\n    if (tag === \"select\") {\n      if (currentValue) return;\n      const option = Array.from(field.options || []).find((item) => item.value && !item.disabled) || field.options[0];\n      if (option) field.value = option.value;\n      return;\n    }\n    if (type === \"checkbox\") {\n      if (field.checked) return;\n      field.checked = true;\n      return;\n    }\n    if (type === \"radio\") {\n      if (field.checked) return;\n      field.checked = true;\n      return;\n    }\n    if (type === \"date\") {\n      if (currentValue) return;\n      field.value = \"2026-03-01\";\n      return;\n    }\n    if (type === \"email\") {\n      if (currentValue) return;\n      field.value = \"bonjour@example.com\";\n      return;\n    }\n    if (type === \"url\") {\n      if (currentValue) return;\n      field.value = \"https://example.com/offre-solaire\";\n      return;\n    }\n    if (type === \"tel\") {\n      if (currentValue) return;\n      field.value = \"0612345678\";\n      return;\n    }\n    if (type === \"color\") {\n      if (currentValue) return;\n      field.value = \"#2f855a\";\n      return;\n    }\n    if (type === \"number\" || type === \"range\") {\n      if (currentValue) return;\n      field.value = sampleNumber(field);\n      return;\n    }\n    if (currentValue) return;\n    field.value = sampleText(field);\n  }\n\n  function stamp(status, detail, headline, primary) {\n    if (qaFinished) return;\n    qaFinished = true;\n    if (qaWatchdog) {\n      window.clearTimeout(qaWatchdog);\n      qaWatchdog = null;\n    }\n    const node = marker();\n    node.dataset.status = status;\n    node.dataset.mode = \"native-form\";\n    node.dataset.detail = detail || \"\";\n    node.dataset.headline = headline || \"\";\n    node.dataset.primary = primary || \"\";\n    node.dataset.viewport = window.innerWidth <= 640 ? \"mobile\" : \"desktop\";\n    window.setTimeout(function () {\n      try {\n        window.stop();\n      } catch (_error) {}\n    }, 0);\n  }\n\n  function installModalGuards() {\n    const noop = function () {};\n    const approve = function () { return true; };\n    const empty = function () { return \"\"; };\n    try { window.alert = noop; } catch (_error) {}\n    try { window.confirm = approve; } catch (_error) {}\n    try { window.prompt = empty; } catch (_error) {}\n  }\n\n  function triggerAction(form, action) {\n    try {\n      if (typeof form.requestSubmit === \"function\") {\n        form.requestSubmit(action || undefined);\n        return;\n      }\n    } catch (_error) {}\n    if (action && typeof action.click === \"function\") {\n      action.click();\n      return;\n    }\n    form.dispatchEvent(new Event(\"submit\", { bubbles: true, cancelable: true }));\n  }\n\n  function inspectResult(before, attemptsLeft) {\n    const result = findResult();\n    if (!result) {\n      stamp(\"fail\", \"La zone de resultat est introuvable.\", \"\");\n      return;\n    }\n    const after = resultSignature(result);\n    const text = normalize(result.textContent);\n    if (after && after !== before && text.length >= 24) {\n      const primary = result.querySelector(\"a[href], button[data-href], [data-primary-url]\") || document.querySelector(\"#tool-result a[href]\");\n      stamp(\"pass\", \"Le formulaire natif a mis a jour la zone de resultat.\", resultHeadline(result), primary ? (primary.getAttribute(\"href\") || primary.getAttribute(\"data-primary-url\") || \"\") : \"\");\n      return;\n    }\n    if (attemptsLeft > 0) {\n      window.setTimeout(function () {\n        inspectResult(before, attemptsLeft - 1);\n      }, 250);\n      return;\n    }\n    stamp(\"fail\", \"La zone de resultat n'a pas renvoye de contenu exploitable.\", resultHeadline(result));\n  }\n\n  function runSmoke() {\n    const params = new URLSearchParams(window.location.search);\n    if (params.get(\"__qa\") !== \"functional\") return;\n    qaWatchdog = window.setTimeout(function () {\n      stamp(\"fail\", \"QA smoke timed out before the page reported a usable result.\", \"\");\n    }, 7000);\n    const form = findForm();\n    if (!form) {\n      stamp(\"fail\", \"Le formulaire principal est introuvable.\", \"\");\n      return;\n    }\n    const result = findResult();\n    const before = resultSignature(result);\n    installModalGuards();\n    try {\n      form.querySelectorAll(\"input, select, textarea\").forEach(applySample);\n    } catch (error) {\n      stamp(\"fail\", error && error.message ? `QA smoke sample failed: ${error.message}` : \"QA smoke sample failed before submit.\", \"\");\n      return;\n    }\n    const action = primaryAction(form);\n    try {\n      triggerAction(form, action);\n    } catch (error) {\n      stamp(\"fail\", error && error.message ? `QA smoke submit failed: ${error.message}` : \"QA smoke submit failed.\", \"\");\n      return;\n    }\n    inspectResult(before, 10);\n  }\n\n  window.addEventListener(\"error\", function (event) {\n    const message = event && event.message ? event.message : \"JavaScript runtime error during QA smoke.\";\n    stamp(\"fail\", `QA smoke JS error: ${message}`, \"\");\n  }, { once: true });\n\n  window.addEventListener(\"unhandledrejection\", function (event) {\n    const reason = event && event.reason;\n    const detail = typeof reason === \"string\"\n      ? reason\n      : reason && reason.message\n        ? reason.message\n        : \"Unhandled promise rejection during QA smoke.\";\n    stamp(\"fail\", `QA smoke rejection: ${detail}`, \"\");\n  }, { once: true });\n\n  if (document.readyState === \"loading\") {\n    document.addEventListener(\"DOMContentLoaded\", function () {\n      window.setTimeout(runSmoke, 60);\n    }, { once: true });\n  } else {\n    window.setTimeout(runSmoke, 60);\n  }\n})();\n</script>\n</body>\n</html>",
+    "generation_mode": "direct_html"
+  }
+}
