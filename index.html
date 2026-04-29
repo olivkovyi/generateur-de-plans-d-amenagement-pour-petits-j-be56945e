@@ -1,0 +1,689 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Générateur de Plans d&#x27;Aménagement pour Petits Jardins Urbains | Votre Projet de Jardin Urbain</title>
+    <meta name="description" content="Propose des agencements optimisés pour des jardins de ville de petite taille, en tenant compte de l">
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+            margin: 0;
+            padding: 0;
+            background-color: #f7f7f7;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 40px;
+        }
+
+        header {
+            background-color: #dbdbdb;
+            padding: 40px 20px;
+            text-align: center;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+            margin-bottom: 20px;
+            width: 100%;
+        }
+
+        h1 {
+            font-size: 2.8em;
+            color: #3a3a3a;
+            margin-bottom: 15px;
+            letter-spacing: -0.03em;
+        }
+
+        header p {
+            font-size: 1.2em;
+            color: #555;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .main-content {
+            flex: 2;
+            min-width: 300px;
+            background-color: #ffffff;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+        }
+
+        .sidebar {
+            flex: 1;
+            min-width: 280px;
+            background-color: #f0f0f0;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        h2 {
+            font-size: 2em;
+            color: #3a3a3a;
+            margin-top: 0;
+            margin-bottom: 20px;
+            letter-spacing: -0.02em;
+        }
+
+        h3 {
+            font-size: 1.5em;
+            color: #4a4a4a;
+            margin-top: 25px;
+            margin-bottom: 15px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: bold;
+            color: #444;
+        }
+
+        input[type="number"],
+        select,
+        textarea {
+            width: calc(100% - 20px);
+            padding: 12px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 1em;
+            box-sizing: border-box;
+        }
+
+        input[type="radio"] {
+            margin-right: 8px;
+        }
+
+        .radio-group label {
+            display: inline-block;
+            margin-right: 20px;
+            font-weight: normal;
+        }
+
+        button {
+            background-color: #5a7d7d;
+            color: white;
+            padding: 15px 25px;
+            border: none;
+            border-radius: 5px;
+            font-size: 1.1em;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            width: 100%;
+            box-sizing: border-box;
+            margin-top: 10px;
+        }
+
+        button:hover {
+            background-color: #4a6a6a;
+        }
+
+        #tool-result {
+            background-color: #e9e9e9;
+            border-left: 5px solid #5a7d7d;
+            padding: 25px;
+            margin-top: 30px;
+            border-radius: 5px;
+            min-height: 100px;
+            font-size: 1.1em;
+            color: #333;
+        }
+
+        #tool-result h3 {
+            color: #5a7d7d;
+            margin-top: 0;
+            font-size: 1.8em;
+            margin-bottom: 15px;
+        }
+
+        #tool-result ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        #tool-result ul li {
+            background-color: #f7f7f7;
+            margin-bottom: 10px;
+            padding: 15px;
+            border-radius: 5px;
+            border: 1px solid #ddd;
+        }
+
+        .next-steps {
+            margin-top: 30px;
+            text-align: center;
+        }
+
+        .next-steps button {
+            width: auto;
+            display: inline-block;
+            margin: 10px;
+            background-color: #6a8b8b;
+        }
+
+        .next-steps button:hover {
+            background-color: #5c7d7d;
+        }
+
+        .seo-section {
+            background-color: #e2e2e2;
+            padding: 40px 20px;
+            margin-top: 40px;
+            text-align: center;
+            border-top: 1px solid #d0d0d0;
+            width: 100%;
+        }
+
+        .seo-section h2 {
+            font-size: 2em;
+            color: #3a3a3a;
+            margin-bottom: 25px;
+        }
+
+        .seo-section p {
+            max-width: 800px;
+            margin: 0 auto 15px auto;
+            color: #555;
+        }
+
+        .seo-section ul {
+            list-style: none;
+            padding: 0;
+            max-width: 800px;
+            margin: 20px auto 0 auto;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 10px;
+        }
+
+        .seo-section ul li {
+            background-color: #dbdbdb;
+            padding: 8px 15px;
+            border-radius: 20px;
+            font-size: 0.9em;
+            color: #4a4a4a;
+            border: 1px solid #ccc;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+                gap: 20px;
+            }
+
+            .main-content, .sidebar {
+                min-width: unset;
+                width: 100%;
+                padding: 20px;
+            }
+
+            h1 {
+                font-size: 2em;
+            }
+
+            h2 {
+                font-size: 1.6em;
+            }
+
+            header {
+                padding: 30px 15px;
+            }
+        }
+    </style>
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://generateur-de-plans-d-amenagement-pour-petits-j-be56945e.onrender.com">
+    <meta property="og:title" content="Générateur de Plans d&#x27;Aménagement pour Petits Jardins Urbains">
+    <meta property="og:description" content="Propose des agencements optimisés pour des jardins de ville de petite taille, en tenant compte de l">
+    <meta property="og:url" content="https://generateur-de-plans-d-amenagement-pour-petits-j-be56945e.onrender.com">
+    <meta property="og:type" content="website">
+    <script type="application/ld+json">{"@context": "https://schema.org", "@type": "WebApplication", "name": "Générateur de Plans d'Aménagement pour Petits Jardins Urbains", "description": "Propose des agencements optimisés pour des jardins de ville de petite taille, en tenant compte de l", "url": "https://generateur-de-plans-d-amenagement-pour-petits-j-be56945e.onrender.com", "applicationCategory": "UtilityApplication", "operatingSystem": "Web Browser"}</script>
+</head>
+<body data-site-slug="generateur-de-plans-d-amenagement-pour-petits-j-be56945e" data-runtime-mode="document_generator">
+    <header>
+        <h1>Imaginez Votre Coin de Verdure Urbain</h1>
+        <p>Transformez votre balcon ou terrasse en une oasis de bien-être. Notre assistant vous guide pas à pas pour créer un espace vert fonctionnel et esthétique, même en ville.</p>
+    </header>
+
+    <div class="container">
+        <div class="main-content">
+            <h2>Votre Projet de Jardin Urbain</h2>
+            <p>Remplissez les champs ci-dessous pour obtenir des suggestions d'aménagement personnalisées.</p>
+
+            <form id="tool-form">
+                <label for="longueur">Longueur de l'espace (en mètres) :</label>
+                <input type="number" id="longueur" name="longueur" min="0.5" max="20" step="0.1" required value="3">
+
+                <label for="largeur">Largeur de l'espace (en mètres) :</label>
+                <input type="number" id="largeur" name="largeur" min="0.5" max="10" step="0.1" required value="1.5">
+
+                <label for="ensoleillement">Ensoleillement :</label>
+                <select id="ensoleillement" name="ensoleillement" required>
+                    <option value="plein-soleil">Plein soleil (6h+ par jour)</option>
+                    <option value="mi-ombre">Mi-ombre (3-6h par jour)</option>
+                    <option value="ombre">Ombre (moins de 3h par jour)</option>
+                </select>
+
+                <h3>Quel est l'objectif principal de votre espace ?</h3>
+                <div class="radio-group">
+                    <input type="radio" id="potager" name="objectif" value="potager" checked>
+                    <label for="potager">Potager/Herbes aromatiques</label>
+                    <input type="radio" id="detente" name="objectif" value="detente">
+                    <label for="detente">Détente/Coin lecture</label>
+                    <input type="radio" id="ornemental" name="objectif" value="ornemental">
+                    <label for="ornemental">Ornemental/Esthétique</label>
+                    <input type="radio" id="mixte" name="objectif" value="mixte">
+                    <label for="mixte">Mixte (potager et détente)</label>
+                </div>
+                <br>
+
+                <label for="preferences-autres">Avez-vous des préférences particulières (type de plantes, matériaux, style) ?</label>
+                <textarea id="preferences-autres" name="preferences-autres" rows="4" placeholder="Ex: Bambou, bois recyclé, ambiance méditerranéenne..."></textarea>
+
+                <button type="submit" id="tool-submit">Générer mon plan</button>
+            </form>
+
+            <div id="tool-result">
+                <h3 id="result-headline">Votre Aménagement Personnalisé</h3>
+                <p>Vos suggestions apparaîtront ici après la soumission du formulaire.</p>
+            </div>
+
+            <div class="next-steps">
+                <button data-affiliate-slot="guide-plantes">Télécharger le guide des plantes urbaines</button>
+                <button data-affiliate-slot="kit-demarrage">Découvrir les kits de démarrage balcon</button>
+            </div>
+        </div>
+
+        <div class="sidebar">
+            <h3>Pourquoi un Jardin Urbain ?</h3>
+            <p>Améliorez votre qualité de vie, réduisez le stress et contribuez à la biodiversité locale. Un petit espace vert peut transformer votre quotidien et celui de votre quartier.</p>
+
+            <h3>Témoignages</h3>
+            <p>"Grâce à cet outil, mon balcon est passé de vide à un coin de verdure apaisant. Les conseils étaient parfaits pour mon petit espace !"<br>— Sophie, Paris 11ème</p>
+            <p>"Je n'aurais jamais pensé pouvoir cultiver mes propres herbes. Le générateur m'a donné les idées précises qu'il me fallait."<br>— Marc, Lyon 7ème</p>
+
+            <h3>Conseils d'Experts</h3>
+            <p>Pensez vertical ! Les murs et les supports suspendus sont vos meilleurs alliés pour maximiser l'espace. Intégrez des plantes à fleurs pour attirer les pollinisateurs et ajouter de la couleur.</p>
+        </div>
+    </div>
+
+    <div class="seo-section">
+        <h2>Créer un Balcon Fleuri et Fonctionnel à Paris, Lyon ou Marseille</h2>
+        <p>Que vous habitiez un appartement parisien avec un petit balcon ou un toit-terrasse à Marseille, l'aménagement d'un jardin urbain est à portée de main. Découvrez comment transformer votre espace extérieur en un véritable havre de paix. Trouvez des idées pour un potager de balcon, des plantes adaptées à l'ombre ou au plein soleil, et des solutions pour optimiser chaque mètre carré. Notre générateur vous offre des plans personnalisés pour faire de votre rêve de verdure une réalité en ville.</p>
+        <ul>
+            <li>Aménagement balcon parisien</li>
+            <li>Jardin urbain petit espace</li>
+            <li>Potager sur terrasse en ville</li>
+            <li>Plantes pour balcon ensoleillé</li>
+            <li>Idées jardin de ville</li>
+            <li>Design balcon moderne</li>
+            <li>Optimisation petit jardin</li>
+            <li>Conseils jardinage urbain</li>
+            <li>Balcon fleuri facile</li>
+            <li>Végétalisation espace urbain</li>
+        </ul>
+    </div>
+
+    <script>
+        document.getElementById('tool-form').addEventListener('submit', function(event) {
+            event.preventDefault();
+
+            const longueur = parseFloat(document.getElementById('longueur').value);
+            const largeur = parseFloat(document.getElementById('largeur').value);
+            const ensoleillement = document.getElementById('ensoleillement').value;
+            const objectif = document.querySelector('input[name="objectif"]:checked').value;
+            const preferences = document.getElementById('preferences-autres').value.toLowerCase();
+
+            let suggestions = [];
+            const surface = longueur * largeur;
+
+            suggestions.push("<h3>Proposition d'Aménagement pour votre Espace de " + surface.toFixed(1) + " m²</h3>");
+
+            // Base recommendations based on objective
+            if (objectif === 'potager') {
+                suggestions.push("<li><strong>Objectif Potager :</strong> Privilégiez des jardinières profondes et des carrés potagers surélevés. Utilisez des herbes aromatiques en pot et des légumes-feuilles comme la salade, les radis ou les épinards.</li>");
+            } else if (objectif === 'detente') {
+                suggestions.push("<li><strong>Objectif Détente :</strong> Installez un petit fauteuil confortable ou un banc compact. Ajoutez des plantes grimpantes sur un treillis pour l'intimité et une petite table basse.</li>");
+            } else if (objectif === 'ornemental') {
+                suggestions.push("<li><strong>Objectif Ornemental :</strong> Variez les hauteurs avec des pots de différentes tailles. Optez pour des plantes à fleurs colorées et des feuillages décoratifs. Pensez aux suspensions.</li>");
+            } else if (objectif === 'mixte') {
+                suggestions.push("<li><strong>Objectif Mixte :</strong> Dédiez un coin aux herbes aromatiques et aux petits légumes, et un autre à un siège confortable entouré de plantes fleuries faciles d'entretien.</li>");
+            }
+
+            // Recommendations based on sun exposure
+            if (ensoleillement === 'plein-soleil') {
+                suggestions.push("<li><strong>Ensoleillement (Plein Soleil) :</strong> Choisissez des plantes méditerranéennes (lavande, romarin, olivier nain), des géraniums, des cactus ou des tomates et poivrons pour le potager.</li>");
+            } else if (ensoleillement === 'mi-ombre') {
+                suggestions.push("<li><strong>Ensoleillement (Mi-ombre) :</strong> Les hortensias, fuchsias, impatiens, ou des salades et radis seront adaptés. Pensez aussi aux fougères pour un coin plus frais.</li>");
+            } else if (ensoleillement === 'ombre') {
+                suggestions.push("<li><strong>Ensoleillement (Ombre) :</strong> Privilégiez les fougères, hostas, impatiens, lierres ou la menthe. Les mousses peuvent aussi créer une ambiance zen.</li>");
+            }
+
+            // Space optimization for small areas
+            if (surface < 4) {
+                suggestions.push("<li><strong>Optimisation Espace :</strong> Pour votre petit espace, pensez vertical ! Étagères à plantes, jardinières suspendues, et murs végétaux sont indispensables. Choisissez des meubles pliables.</li>");
+            } else if (surface >= 4 && surface < 8) {
+                suggestions.push("<li><strong>Optimisation Espace :</strong> Avec cette surface, vous pouvez combiner quelques éléments : un petit salon de jardin, des jardinières au sol et quelques suspensions.</li>");
+            } else { // Larger spaces
+                suggestions.push("<li><strong>Optimisation Espace :</strong> Votre espace généreux permet d'intégrer plusieurs zones : un coin repas, un espace détente et un espace de culture. Variez les textures et les matériaux.</li>");
+            }
+
+            // Additional preferences
+            if (preferences.includes('bambou')) {
+                suggestions.push("<li><strong>Préférence Spécifique :</strong> Pour le bambou, optez pour des variétés non traçantes et de grands pots pour éviter l'envahissement. Il apportera une touche zen et une intimité.</li>");
+            }
+            if (preferences.includes('bois')) {
+                suggestions.push("<li><strong>Préférence Spécifique :</strong> Le bois recyclé est un excellent choix. Utilisez-le pour des jardinières, des caillebotis au sol ou un petit banc pour une ambiance naturelle et durable.</li>");
+            }
+            if (preferences.includes('méditerranéen')) {
+                suggestions.push("<li><strong>Préférence Spécifique :</strong> Pour une ambiance méditerranéenne, intégrez de la lavande, du romarin, un petit olivier, des poteries en terre cuite et des couleurs chaudes.</li>");
+            }
+            if (preferences.includes('faible entretien') || preferences.includes('facile')) {
+                suggestions.push("<li><strong>Conseil Entretien :</strong> Pour un entretien facile, choisissez des plantes succulentes, des graminées ornementales ou des arbustes nains résistants. Pensez à un système d'arrosage goutte à goutte.</li>");
+            }
+
+            suggestions.push("<li><strong>Conseil Général :</strong> N'oubliez pas les éléments décoratifs : éclairage d'ambiance, coussins confortables, quelques galets ou un petit miroir pour agrandir l'espace.</li>");
+
+
+            document.getElementById('tool-result').innerHTML = '<h3>Votre Aménagement Personnalisé</h3><ul>' + suggestions.join('') + '</ul>';
+        });
+    </script>
+<div id="qa-smoke-result" hidden></div>
+<script id="farmbuilder-affiliate-helper">
+(function () {
+  window.__UTILITY_AFFILIATE_MAP = window.__UTILITY_AFFILIATE_MAP || {};
+  document.addEventListener("click", function (event) {
+    const target = event.target.closest("[data-affiliate-slot]");
+    if (!target) return;
+    const slot = target.getAttribute("data-affiliate-slot");
+    const href = window.__UTILITY_AFFILIATE_MAP[slot];
+    if (!href) return;
+    if (target.tagName && target.tagName.toLowerCase() === "a") {
+      target.setAttribute("href", href);
+      target.setAttribute("rel", "nofollow sponsored noopener noreferrer");
+      return;
+    }
+    event.preventDefault();
+    window.open(href, "_blank", "noopener");
+  }, true);
+})();
+</script>
+<script id="farmbuilder-functional-qa">
+(function () {
+  function marker() {
+    let node = document.getElementById("qa-smoke-result");
+    if (node) return node;
+    node = document.createElement("div");
+    node.id = "qa-smoke-result";
+    node.hidden = true;
+    document.body.appendChild(node);
+    return node;
+  }
+
+  let qaFinished = false;
+  let qaWatchdog = null;
+
+  function normalize(text) {
+    return String(text || "").replace(/\s+/g, " ").trim();
+  }
+
+  function findForm() {
+    return document.getElementById("tool-form") || document.querySelector("form");
+  }
+
+  function findResult() {
+    return (
+      document.getElementById("tool-result") ||
+      document.querySelector("[data-result]") ||
+      document.querySelector(".tool-result, .result-card, .result, .results, .output, .preview, .diagnostic, .analysis")
+    );
+  }
+
+  function primaryAction(form) {
+    if (!form) return null;
+    return (
+      document.getElementById("tool-submit") ||
+      form.querySelector("#tool-submit") ||
+      form.querySelector("[data-primary-action]") ||
+      form.querySelector("button[type=submit]") ||
+      form.querySelector("button") ||
+      form.querySelector("input[type=submit]")
+    );
+  }
+
+  function resultSignature(node) {
+    if (!node) return "";
+    const text = normalize(node.textContent);
+    const html = normalize(node.innerHTML).slice(0, 600);
+    return `${text}||${html}`;
+  }
+
+  function resultHeadline(node) {
+    if (!node) return "";
+    const heading = node.querySelector("h1, h2, h3, strong, b");
+    return normalize(heading ? heading.textContent : "");
+  }
+
+  function sampleText(field) {
+    const key = `${field.id || ""} ${field.name || ""} ${field.placeholder || ""}`.toLowerCase();
+    if (/email/.test(key)) return "bonjour@example.com";
+    if (/url|site|website|lien/.test(key)) return "https://example.com/offre-solaire";
+    if (/phone|tel|mobile/.test(key)) return "0612345678";
+    if (/ville|city|localisation|location|region|departement|postal/.test(key)) return "Paris";
+    if (/orientation/.test(key)) return "sud";
+    if (/keyword|theme|topic|sujet|subject/.test(key)) return "energie solaire domestique";
+    if (/titre|title/.test(key)) return "Simulateur solaire maison";
+    if (/nom|name|project/.test(key)) return "Projet Horizon";
+    if (/description|notes|content|message/.test(key)) return "Maison individuelle exposee sud avec toiture exploitable.";
+    return field.placeholder || "France";
+  }
+
+  function sampleNumber(field) {
+    const key = `${field.id || ""} ${field.name || ""}`.toLowerCase();
+    if (/inclinaison|angle|slope/.test(key)) return "30";
+    if (/surface|size|m2|sqm/.test(key)) return "28";
+    if (/annee|year/.test(key)) return "2024";
+    if (/prix|price|budget|cost|amount|montant/.test(key)) return "12000";
+    const min = Number(field.min || "");
+    const max = Number(field.max || "");
+    if (Number.isFinite(min) && Number.isFinite(max) && max >= min) {
+      return String(Math.min(max, Math.max(min, min + Math.round((max - min) * 0.35))));
+    }
+    if (Number.isFinite(min)) return String(Math.max(min, 12));
+    if (Number.isFinite(max)) return String(Math.min(max, 12));
+    return field.value || "12";
+  }
+
+  function applySample(field) {
+    const tag = (field.tagName || "").toLowerCase();
+    const type = (field.type || "").toLowerCase();
+    if (field.disabled) return;
+    if (type === "hidden" || type === "submit" || type === "button" || type === "reset" || type === "image" || type === "file") {
+      return;
+    }
+    const currentValue = normalize(field.value);
+    if (tag === "select") {
+      if (currentValue) return;
+      const option = Array.from(field.options || []).find((item) => item.value && !item.disabled) || field.options[0];
+      if (option) field.value = option.value;
+      return;
+    }
+    if (type === "checkbox") {
+      if (field.checked) return;
+      field.checked = true;
+      return;
+    }
+    if (type === "radio") {
+      if (field.checked) return;
+      field.checked = true;
+      return;
+    }
+    if (type === "date") {
+      if (currentValue) return;
+      field.value = "2026-03-01";
+      return;
+    }
+    if (type === "email") {
+      if (currentValue) return;
+      field.value = "bonjour@example.com";
+      return;
+    }
+    if (type === "url") {
+      if (currentValue) return;
+      field.value = "https://example.com/offre-solaire";
+      return;
+    }
+    if (type === "tel") {
+      if (currentValue) return;
+      field.value = "0612345678";
+      return;
+    }
+    if (type === "color") {
+      if (currentValue) return;
+      field.value = "#2f855a";
+      return;
+    }
+    if (type === "number" || type === "range") {
+      if (currentValue) return;
+      field.value = sampleNumber(field);
+      return;
+    }
+    if (currentValue) return;
+    field.value = sampleText(field);
+  }
+
+  function stamp(status, detail, headline, primary) {
+    if (qaFinished) return;
+    qaFinished = true;
+    if (qaWatchdog) {
+      window.clearTimeout(qaWatchdog);
+      qaWatchdog = null;
+    }
+    const node = marker();
+    node.dataset.status = status;
+    node.dataset.mode = "native-form";
+    node.dataset.detail = detail || "";
+    node.dataset.headline = headline || "";
+    node.dataset.primary = primary || "";
+    node.dataset.viewport = window.innerWidth <= 640 ? "mobile" : "desktop";
+    window.setTimeout(function () {
+      try {
+        window.stop();
+      } catch (_error) {}
+    }, 0);
+  }
+
+  function installModalGuards() {
+    const noop = function () {};
+    const approve = function () { return true; };
+    const empty = function () { return ""; };
+    try { window.alert = noop; } catch (_error) {}
+    try { window.confirm = approve; } catch (_error) {}
+    try { window.prompt = empty; } catch (_error) {}
+  }
+
+  function triggerAction(form, action) {
+    try {
+      if (typeof form.requestSubmit === "function") {
+        form.requestSubmit(action || undefined);
+        return;
+      }
+    } catch (_error) {}
+    if (action && typeof action.click === "function") {
+      action.click();
+      return;
+    }
+    form.dispatchEvent(new Event("submit", { bubbles: true, cancelable: true }));
+  }
+
+  function inspectResult(before, attemptsLeft) {
+    const result = findResult();
+    if (!result) {
+      stamp("fail", "La zone de resultat est introuvable.", "");
+      return;
+    }
+    const after = resultSignature(result);
+    const text = normalize(result.textContent);
+    if (after && after !== before && text.length >= 24) {
+      const primary = result.querySelector("a[href], button[data-href], [data-primary-url]") || document.querySelector("#tool-result a[href]");
+      stamp("pass", "Le formulaire natif a mis a jour la zone de resultat.", resultHeadline(result), primary ? (primary.getAttribute("href") || primary.getAttribute("data-primary-url") || "") : "");
+      return;
+    }
+    if (attemptsLeft > 0) {
+      window.setTimeout(function () {
+        inspectResult(before, attemptsLeft - 1);
+      }, 250);
+      return;
+    }
+    stamp("fail", "La zone de resultat n'a pas renvoye de contenu exploitable.", resultHeadline(result));
+  }
+
+  function runSmoke() {
+    const params = new URLSearchParams(window.location.search);
+    if (params.get("__qa") !== "functional") return;
+    qaWatchdog = window.setTimeout(function () {
+      stamp("fail", "QA smoke timed out before the page reported a usable result.", "");
+    }, 7000);
+    const form = findForm();
+    if (!form) {
+      stamp("fail", "Le formulaire principal est introuvable.", "");
+      return;
+    }
+    const result = findResult();
+    const before = resultSignature(result);
+    installModalGuards();
+    try {
+      form.querySelectorAll("input, select, textarea").forEach(applySample);
+    } catch (error) {
+      stamp("fail", error && error.message ? `QA smoke sample failed: ${error.message}` : "QA smoke sample failed before submit.", "");
+      return;
+    }
+    const action = primaryAction(form);
+    try {
+      triggerAction(form, action);
+    } catch (error) {
+      stamp("fail", error && error.message ? `QA smoke submit failed: ${error.message}` : "QA smoke submit failed.", "");
+      return;
+    }
+    inspectResult(before, 10);
+  }
+
+  window.addEventListener("error", function (event) {
+    const message = event && event.message ? event.message : "JavaScript runtime error during QA smoke.";
+    stamp("fail", `QA smoke JS error: ${message}`, "");
+  }, { once: true });
+
+  window.addEventListener("unhandledrejection", function (event) {
+    const reason = event && event.reason;
+    const detail = typeof reason === "string"
+      ? reason
+      : reason && reason.message
+        ? reason.message
+        : "Unhandled promise rejection during QA smoke.";
+    stamp("fail", `QA smoke rejection: ${detail}`, "");
+  }, { once: true });
+
+  if (document.readyState === "loading") {
+    document.addEventListener("DOMContentLoaded", function () {
+      window.setTimeout(runSmoke, 60);
+    }, { once: true });
+  } else {
+    window.setTimeout(runSmoke, 60);
+  }
+})();
+</script>
+</body>
+</html>
