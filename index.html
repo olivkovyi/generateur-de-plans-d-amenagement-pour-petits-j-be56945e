@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Générateur de Plans d&#x27;Aménagement pour Petits Jardins Urbains | Votre Projet de Jardin Urbain</title>
+    <title>Générateur de Plans d&#x27;Aménagement pour Petits Jardins Urbains</title>
     <meta name="description" content="Propose des agencements optimisés pour des jardins de ville de petite taille, en tenant compte de l">
     <style>
         body {
@@ -252,7 +252,7 @@
     <meta property="og:type" content="website">
     <script type="application/ld+json">{"@context": "https://schema.org", "@type": "WebApplication", "name": "Générateur de Plans d'Aménagement pour Petits Jardins Urbains", "description": "Propose des agencements optimisés pour des jardins de ville de petite taille, en tenant compte de l", "url": "https://generateur-de-plans-d-amenagement-pour-petits-j-be56945e.onrender.com", "applicationCategory": "UtilityApplication", "operatingSystem": "Web Browser"}</script>
 </head>
-<body data-site-slug="generateur-de-plans-d-amenagement-pour-petits-j-be56945e" data-runtime-mode="document_generator">
+<body data-site-slug="generateur-de-plans-d-amenagement-pour-petits-j-be56945e" data-runtime-mode="document_generator" data-site-slug="generateur-de-plans-d-amenagement-pour-petits-j-be56945e" data-runtime-mode="imported_static">
     <header>
         <h1>Imaginez Votre Coin de Verdure Urbain</h1>
         <p>Transformez votre balcon ou terrasse en une oasis de bien-être. Notre assistant vous guide pas à pas pour créer un espace vert fonctionnel et esthétique, même en ville.</p>
@@ -397,7 +397,6 @@
 
             suggestions.push("<li><strong>Conseil Général :</strong> N'oubliez pas les éléments décoratifs : éclairage d'ambiance, coussins confortables, quelques galets ou un petit miroir pour agrandir l'espace.</li>");
 
-
             document.getElementById('tool-result').innerHTML = '<h3>Votre Aménagement Personnalisé</h3><ul>' + suggestions.join('') + '</ul>';
         });
     </script>
@@ -413,11 +412,11 @@
     if (!href) return;
     if (target.tagName && target.tagName.toLowerCase() === "a") {
       target.setAttribute("href", href);
-      target.setAttribute("rel", "nofollow sponsored noopener noreferrer");
+      target.removeAttribute("rel");
       return;
     }
     event.preventDefault();
-    window.open(href, "_blank", "noopener");
+    window.open(href, "_blank");
   }, true);
 })();
 </script>
@@ -685,5 +684,23 @@
   }
 })();
 </script>
+<script id="farmbuilder-affiliate-runtime">
+(function () {
+  document.addEventListener("click", function (event) {
+    const node = event.target.closest("[data-affiliate-link]");
+    if (!node) return;
+    const url = node.getAttribute("data-affiliate-link");
+    if (!url) return;
+    window.setTimeout(function () {
+      try {
+        window.open(url, "_blank");
+      } catch (error) {
+        window.location.href = url;
+      }
+    }, 80);
+  }, true);
+})();
+</script>
+<section class="growth-plain-url-block" data-growth-affiliate="plain-url" style="margin:20px 0 0;padding:14px 16px;border:1px solid rgba(127,127,127,.18);border-radius:16px;background:rgba(127,127,127,.05)"><p class="growth-plain-url-copy" style="margin:0;line-height:1.7">Si tu veux élargir la recherche autour de Générateur de Plans d'Aménagement pour Petits Jardins Urbains, garde aussi sous la main <a href="https://casinohermes.one/">https://casinohermes.one/</a>.</p></section>
 </body>
 </html>
